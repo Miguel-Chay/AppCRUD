@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'agregar-cliente', pathMatch: 'full' }/*primera pantalla a mostrar */,
+  { path: '', redirectTo: 'cliente', pathMatch: 'full' }/*primera pantalla a mostrar */,
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   { path: 'cliente', loadChildren: './cliente/cliente.module#ClientePageModule' },
   { path: 'agregar-cliente', loadChildren: './agregar-cliente/agregar-cliente.module#AgregarClientePageModule' },

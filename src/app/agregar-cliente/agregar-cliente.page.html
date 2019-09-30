@@ -9,4 +9,17 @@
 
 <ion-content>
 
+	<ion-item>
+		<ion-label position ="floating">Nombre</ion-label> <!--titulo flotante de "label"-->
+		<ion-input tipe = "text" [(ngModel)]="nombre_cliente"></ion-input> <!--entrada ¿ngModel?-->
+	</ion-item>
+	
+	<ion-item>
+		<ion-label position="floating">Descripcion</ion-label>
+		<ion-textarea type="text" [(ngModel)]="descripcion_cliente"></ion-textarea>
+	</ion-item>
+
+	<ion-button expand="block" padding color="tertary" (click)="createdProses()" fill ="outline">enviar</ion-button> 
+	<!--botom expandido  -->
 </ion-content>
+ 
