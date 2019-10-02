@@ -5,8 +5,11 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class PostProvider {
-	server:string="http://localhost/IONICO/server_api/";
 
+	//server:string="http://localhost:8100/IONICO/server_api/";
+	server:string="http://localhost/CRUD/server_api/";
+	//http://localhost/CRUD/server_api/
+	//proses-api.php
 	constructor(public http : Http){
 
 	}
